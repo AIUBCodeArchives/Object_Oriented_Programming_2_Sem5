@@ -1,5 +1,5 @@
 ﻿using System;
-
+using System.Linq;
 
 
 namespace Test1
@@ -8,12 +8,21 @@ namespace Test1
     {
         static void Main(string[] args)
         {
-            System.Console.WriteLine("Hello world");
+        //    System.Console.WriteLine("Hello world");
 
-            string name = "rakin";
+        //    string name = "rakin";
 
-            Console.WriteLine($"my name is {name}");
+        //    Console.WriteLine($"my name is {name}");
 
+
+            int[] source = { 1, 2, 3 };
+            
+            var query = from item in source where item <= 2 select item;
+
+            foreach( var item in query )
+            {
+                Console.WriteLine(item);
+            }
             Console.ReadLine();
         }
     }
