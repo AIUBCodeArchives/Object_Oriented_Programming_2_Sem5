@@ -1,8 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+
+
 
 namespace Test1
 {
@@ -10,6 +8,13 @@ namespace Test1
     {
         static void Main(string[] args)
         {
+            System.Console.WriteLine("Hello world");
+
+            string name = "rakin";
+
+            Console.WriteLine($"my name is {name}");
+
+            Console.ReadLine();
         }
     }
 }
