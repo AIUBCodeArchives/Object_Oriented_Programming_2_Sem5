@@ -43,16 +43,22 @@ namespace StudentManagementSystem
 
             for (int i = 0; i < numberOfStudent; i++) {
 
-                student[i] = new Student();
+                //Green - For using empty/Default Constructor
+                //student[i] = new Student();
                 Console.WriteLine($"Enter details for Student : {i+1}");
                 Console.Write($"Enter Student No.{i+1} ID : ");
-                student[i].Id = Convert.ToInt32(Console.ReadLine());
+                //student[i].Id = Convert.ToInt32(Console.ReadLine());
+                int Id = Convert.ToInt32(Console.ReadLine());
                 Console.Write($"Enter Student No.{i + 1} Name : ");
-                student[i].Name = Console.ReadLine();
+                //student[i].Name = Console.ReadLine();
+                string Name = Console.ReadLine();
                 Console.Write($"Enter Student No.{i + 1} GPA : ");
-                student[i].GPA = Convert.ToDouble(Console.ReadLine());
+                //student[i].GPA = Convert.ToDouble(Console.ReadLine());
+                double GPA = Convert.ToDouble(Console.ReadLine());
                 Console.Write($"Enter Student No.{i + 1} Attendence Info : ");
-                student[i].IsFullTime = Convert.ToBoolean(Console.ReadLine());
+                //student[i].IsFullTime = Convert.ToBoolean(Console.ReadLine());
+                bool IsFullTime = Convert.ToBoolean(Console.ReadLine());
+                student[i] = new Student(Id, Name, GPA, IsFullTime);
                 Console.WriteLine();
                 Console.WriteLine();
             }
@@ -79,6 +85,7 @@ namespace StudentManagementSystem
             Console.WriteLine($"Avarage GPA : {aveGPA}");
 
             Console.ReadLine();
+
         }
     }
 }
