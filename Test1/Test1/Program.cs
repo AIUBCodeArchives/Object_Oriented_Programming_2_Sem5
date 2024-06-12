@@ -5,6 +5,23 @@ using System.Security.Cryptography.X509Certificates;
 
 namespace Test1
 {
+    public class Employee 
+    {
+        private string fullName;
+
+        //Accessor 
+        public string getFullName()
+        {
+            return fullName;
+        }
+        //Mutator
+        public void setFullName(string fullName)
+        {
+            this.fullName = fullName;
+        }
+
+    }
+
     class Program
     {
         static void Main(string[] args)
@@ -25,9 +42,15 @@ namespace Test1
             //    Console.WriteLine(item);
             //}
 
+            Employee employee = new Employee();
+            Console.Write("Enter name for testing : ");
 
+            string test = Console.ReadLine();
+            employee.setFullName(test);
 
+            Console.WriteLine(employee.getFullName());
 
+            Console.ReadLine();
 
         }
     }
