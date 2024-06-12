@@ -18,10 +18,10 @@ namespace StudentManagementSystem
         }
         public Student(int id, string name, double gpa, bool isfulltime)
         {
-            Id = id;
-            Name = name;
-            GPA = gpa;
-            IsFullTime = isfulltime;
+            this.Id = id;
+            this.Name = name;
+            this.GPA = gpa;
+            this.IsFullTime = isfulltime;
         }
         public void display()
         {

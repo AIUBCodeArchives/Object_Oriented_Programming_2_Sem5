@@ -11,10 +11,10 @@ namespace StudentManagementSystem
 
         public Student(int id, string name, double gpa, bool isFullTime)
         {
-            ID = id;
-            Name = name;
-            GPA = gpa;
-            IsFullTime = isFullTime;
+            this.ID = id;
+            this.Name = name;
+            this.GPA = gpa;
+            this.IsFullTime = isFullTime;
         }
 
         public void DisplayStudentInfo()
