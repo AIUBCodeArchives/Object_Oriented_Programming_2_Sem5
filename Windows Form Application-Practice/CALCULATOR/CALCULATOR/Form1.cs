@@ -26,16 +26,23 @@ namespace CALCULATOR
         //}
 
         private void add_Click(object sender, EventArgs e)
-        {
-            int num1 = Convert.ToInt32(textBox1.Text);
-            int num2 = Convert.ToInt32(textBox2.Text);
+        { 
+            if (textBox1.Text != "" && textBox2.Text != "")
+            {
+                int num1 = Convert.ToInt32(textBox1.Text);
+                int num2 = Convert.ToInt32(textBox2.Text);
 
-            int result = num1 + num2;
+                int result = num1 + num2;
 
-            //MessageBox.Show($"Your result is : {result.ToString()}");
+                //MessageBox.Show($"Your result is : {result.ToString()}");
 
-            label4.Text = $"Your Addition Result is : {result.ToString()}";
-            label4.Visible = true;
+                label4.Text = $"Your Addition Result is : {result.ToString()}";
+                label4.Visible = true;
+            }
+            else
+            {
+                MessageBox.Show("Please enter both fields.");
+            }
 
         }
 
@@ -43,40 +50,69 @@ namespace CALCULATOR
 
         private void subs_Click(object sender, EventArgs e)
         {
-            int num1 = Convert.ToInt32(textBox1.Text);
-            int num2 = Convert.ToInt32(textBox2.Text);
+            if (textBox1.Text != "" && textBox2.Text != "")
+            {
+                int num1 = Convert.ToInt32(textBox1.Text);
+                int num2 = Convert.ToInt32(textBox2.Text);
 
-            int result = num1 - num2;
-            label4.Text = $"Your Substraction Result is : {result.ToString()}";
-            label4.Visible = true;
-            //MessageBox.Show($"Your result is : {result.ToString()}");
+                int result = num1 - num2;
+                label4.Text = $"Your Substraction Result is : {result.ToString()}";
+                label4.Visible = true;
+                //MessageBox.Show($"Your result is : {result.ToString()}");
+            }
+            else
+            {
+                MessageBox.Show("Please enter both fields.");
+            }
+            
         }
        
         private void multi_Click(object sender, EventArgs e)
         {
-            int num1 = Convert.ToInt32(textBox1.Text);
-            int num2 = Convert.ToInt32(textBox2.Text);
+            if (textBox1.Text != "" && textBox2.Text != "")
+            {
+                int num1 = Convert.ToInt32(textBox1.Text);
+                int num2 = Convert.ToInt32(textBox2.Text);
 
-            int result = num1 * num2;
-            label4.Text = $"Your Multiplication Result is : {result.ToString()}";
-            label4.Visible = true;
-            //MessageBox.Show($"Your result is : {result.ToString()}");
+                int result = num1 * num2;
+                label4.Text = $"Your Multiplication Result is : {result.ToString()}";
+                label4.Visible = true;
+                //MessageBox.Show($"Your result is : {result.ToString()}");
+            }
+            else
+            {
+                MessageBox.Show("Please enter both fields.");
+            }
+            
         }
         private void div_Click(object sender, EventArgs e)
         {
-            int num1 = Convert.ToInt32(textBox1.Text);
-            int num2 = Convert.ToInt32(textBox2.Text);
+            if (textBox1.Text != "" && textBox2.Text != "")
+            {
+                int num1 = Convert.ToInt32(textBox1.Text);
+                int num2 = Convert.ToInt32(textBox2.Text);
 
-            int result = num1 / num2;
+                int result = num1 / num2;
 
-            label4.Text = $"Your Division Result is : {result.ToString()}";
-            label4.Visible = true;
-            //MessageBox.Show($"Your result is : {result.ToString()}");
+                label4.Text = $"Your Division Result is : {result.ToString()}";
+                label4.Visible = true;
+                //MessageBox.Show($"Your result is : {result.ToString()}");
+            }
+            else
+            {
+                MessageBox.Show("Please enter both fields.");
+            }
+            
         }
 
         private void label4_Click(object sender, EventArgs e)
         {
             
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
