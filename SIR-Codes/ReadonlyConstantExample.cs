@@ -34,5 +34,6 @@ class Program
         // circle.Radius = 10.0;
 
         Console.WriteLine($"Pi: {Circle.Pi}");
+        Console.ReadLine();
     }
 }
