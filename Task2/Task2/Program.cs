@@ -28,7 +28,7 @@ namespace Task2
     {
         Info, 
         Warning,
-        Error,
+        Error = 404,
         Critical
     }
 
@@ -51,16 +51,16 @@ namespace Task2
             switch (Status)
             {
                 case OrderStatus.Pending:
-                    Console.WriteLine($"Order No. {OrderId} in pending");
+                    Console.WriteLine($"Order No. {OrderId} is pending");
                     break;
                 case OrderStatus.Processing:
-                    Console.WriteLine($"Order No. {OrderId} in processing");
+                    Console.WriteLine($"Order No. {OrderId} is processing");
                     break;
                 case OrderStatus.Shipped:
-                    Console.WriteLine($"Order No. {OrderId} in Shipped");
+                    Console.WriteLine($"Order No. {OrderId} is Shipped");
                     break;
                 case OrderStatus.Delivered:
-                    Console.WriteLine($"Order No. {OrderId} in Delivered");
+                    Console.WriteLine($"Order No. {OrderId} is Delivered");
                     break;
                 default:
                     Console.WriteLine("Error, please try again");
@@ -81,22 +81,29 @@ namespace Task2
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("Enum - DaysOfWeek");
             //printing meeting day
             Schedule schedule = new Schedule();
             schedule.MeetingDay = DayOfWeek.Monday;
             schedule.PrintMeetingDay();
+            Console.WriteLine();
+            Console.WriteLine();
 
+            Console.WriteLine("Enum - OrderStatus");
             //printing order 
             Order order = new Order();
             order.OrderId = 101;
             order.Status = OrderStatus.Pending;
             order.PrintStatus();
+            Console.WriteLine();
+            Console.WriteLine();
 
+            Console.WriteLine("Enum - Logger");
             //printing Logger
             Logger logger = new Logger();
             logger.Logging(LogLevel.Info, "ehehhe - Info");
-            logger.Logging(LogLevel.Warning, "Hello - Waring");
-            logger.Logging(LogLevel.Error, "Hello - Error");
+            logger.Logging(LogLevel.Warning, "Hello - Warning");
+            logger.Logging(LogLevel.Error, $"Hello - {(int)LogLevel.Error}");
             logger.Logging(LogLevel.Critical, "Rakin - Critical");
 
             Console.ReadLine();
