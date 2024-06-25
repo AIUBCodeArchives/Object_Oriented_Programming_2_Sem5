@@ -1,0 +1,105 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Task2
+{
+    public enum DaysOfWeek 
+    {
+        Sunday,
+        Monday,
+        Tuesday,
+        Wednesday,
+        Thursday,
+        Friday,
+        Saturday
+    }
+
+    public enum OrderStatus 
+    {
+        Pending,
+        Processing,
+        Shipped,
+        Delivered
+    }
+    public enum LogLevel
+    {
+        Info, 
+        Warning,
+        Error,
+        Critical
+    }
+
+    public class Schedule 
+    {
+        public DayOfWeek MeetingDay { get; set; }
+
+        public void PrintMeetingDay ()
+        {
+            Console.WriteLine($"Meeting Day is set on {MeetingDay}");
+        }
+    }
+    public class Order
+    {
+        public int OrderId { get; set; }
+        public OrderStatus Status { get; set; }
+
+        public void PrintStatus ()
+        {
+            switch (Status)
+            {
+                case OrderStatus.Pending:
+                    Console.WriteLine($"Order No. {OrderId} in pending");
+                    break;
+                case OrderStatus.Processing:
+                    Console.WriteLine($"Order No. {OrderId} in processing");
+                    break;
+                case OrderStatus.Shipped:
+                    Console.WriteLine($"Order No. {OrderId} in Shipped");
+                    break;
+                case OrderStatus.Delivered:
+                    Console.WriteLine($"Order No. {OrderId} in Delivered");
+                    break;
+                default:
+                    Console.WriteLine("Error, please try again");
+                    break;
+            }
+        }
+    }
+    
+    public class Logger
+    {
+        public void Logging(LogLevel level, string message)
+        {
+            Console.WriteLine($"At level-{level}, Message - \"{message}\" ");
+        }
+    }
+
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            //printing meeting day
+            Schedule schedule = new Schedule();
+            schedule.MeetingDay = DayOfWeek.Monday;
+            schedule.PrintMeetingDay();
+
+            //printing order 
+            Order order = new Order();
+            order.OrderId = 101;
+            order.Status = OrderStatus.Pending;
+            order.PrintStatus();
+
+            //printing Logger
+            Logger logger = new Logger();
+            logger.Logging(LogLevel.Info, "ehehhe - Info");
+            logger.Logging(LogLevel.Warning, "Hello - Waring");
+            logger.Logging(LogLevel.Error, "Hello - Error");
+            logger.Logging(LogLevel.Critical, "Rakin - Critical");
+
+            Console.ReadLine();
+        }
+    }
+}
