@@ -38,7 +38,7 @@ namespace ConstructorsExample
         }
 
         // Copy constructor
-        public Car(Car other)
+        public Car(Car car)
         {
             Model = other.Model;
             Year = other.Year;
