@@ -8,7 +8,7 @@ namespace Mid_Practice
 {
     internal class Program
     {
-        static void Main(string[] args)
+        public void BasicHW()
         {
             string message = "Hello World";
             Console.WriteLine(message);
@@ -27,21 +27,21 @@ namespace Mid_Practice
             string name = Console.ReadLine();
             Console.Write("Hi!  " + name);
 
-            /*
-             Console.Write("Enter First Number   : ");
-             int number1 = Convert.ToInt32(Console.ReadLine());
-             Console.Write("Enter Second Number  : ");
-             int number2 = Convert.ToInt32(Console.ReadLine());
-             int Result = number1 + number2;
-             Console.Write("Result is : " + Result);
-             */
-            /*
+
+            Console.Write("Enter First Number   : ");
+            int number1 = Convert.ToInt32(Console.ReadLine());
+            Console.Write("Enter Second Number  : ");
+            int number2 = Convert.ToInt32(Console.ReadLine());
+            int Result = number1 + number2;
+            Console.Write("Result is : " + Result);
+
+
             Console.Write("Enter your name  : ");
-            string name = Console.ReadLine();
+            string name1 = Console.ReadLine();
             Console.Write("Enter your Score : ");
             int score = Convert.ToInt32(Console.ReadLine());
             string Condition;
-            if(score>=50)
+            if (score >= 50)
             {
                 ///Console.WriteLine("Hi ! " + name+ " you have passed.");
                 Condition = " you have passed. ";
@@ -51,14 +51,14 @@ namespace Mid_Practice
                 ///Console.WriteLine("Hi ! " + name + " you have failed.");
                 Condition = " you have failed. ";
             }
-            Console.WriteLine("Hi ! " + name + Condition);*/
-            /*
+            Console.WriteLine("Hi ! " + name1 + Condition);
+
             for (int i = 0; i < 5;i++ )
             {
                 Console.WriteLine("Proud AIUBIAN!");
             }
-            */
-            /*
+            
+
             int[] numbers = new int[5];
             numbers[0] = 4;
             numbers[1] = 5;
@@ -74,8 +74,13 @@ namespace Mid_Practice
             {
                 Console.WriteLine(variable);
             }
-            */
+        }
+        static void Main(string[] args)
+        {
 
+            Program program = new Program();
+            program.BasicHW();
+            Console.ReadLine();
         }
     }
 }
