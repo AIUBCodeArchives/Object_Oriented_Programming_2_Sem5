@@ -8,21 +8,16 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace RamenShopDemo
+namespace Econtact
 {
-    public partial class Form1 : Form
+    public partial class Econtact : Form
     {
-        public Form1()
+        public Econtact()
         {
             InitializeComponent();
         }
 
-        private void button2_Click(object sender, EventArgs e)
-        {
-            Form2 test = new Form2();
-        }
-
-        private void button1_Click(object sender, EventArgs e)
+        private void txtboxContactID_TextChanged(object sender, EventArgs e)
         {
 
         }

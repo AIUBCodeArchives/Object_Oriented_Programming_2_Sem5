@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace WindowsFormsApp1Test.Properties
+namespace Econtact.Properties
 {
 
 
