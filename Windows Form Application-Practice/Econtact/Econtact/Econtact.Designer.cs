@@ -34,14 +34,14 @@
             this.txtbocContactID = new System.Windows.Forms.TextBox();
             this.txtboxContactNumber = new System.Windows.Forms.TextBox();
             this.lblContactNumber = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtboxAddress = new System.Windows.Forms.TextBox();
             this.lblAddress = new System.Windows.Forms.Label();
             this.cmbboxGender = new System.Windows.Forms.Label();
             this.txtboxLastName = new System.Windows.Forms.TextBox();
             this.lblLastName = new System.Windows.Forms.Label();
             this.txtboxFirstName = new System.Windows.Forms.TextBox();
             this.lblFirstName = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.comboBoxGender = new System.Windows.Forms.ComboBox();
             this.btnClear = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.lblSearch = new System.Windows.Forms.Label();
@@ -81,6 +81,7 @@
             this.txtbocContactID.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtbocContactID.Location = new System.Drawing.Point(282, 186);
             this.txtbocContactID.Name = "txtbocContactID";
+            this.txtbocContactID.ReadOnly = true;
             this.txtbocContactID.Size = new System.Drawing.Size(253, 30);
             this.txtbocContactID.TabIndex = 2;
             // 
@@ -103,14 +104,14 @@
             this.lblContactNumber.TabIndex = 3;
             this.lblContactNumber.Text = "Contact No. :";
             // 
-            // textBox2
+            // txtboxAddress
             // 
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(282, 452);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(253, 133);
-            this.textBox2.TabIndex = 6;
+            this.txtboxAddress.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtboxAddress.Location = new System.Drawing.Point(282, 452);
+            this.txtboxAddress.Multiline = true;
+            this.txtboxAddress.Name = "txtboxAddress";
+            this.txtboxAddress.Size = new System.Drawing.Size(253, 133);
+            this.txtboxAddress.TabIndex = 6;
             // 
             // lblAddress
             // 
@@ -171,18 +172,18 @@
             this.lblFirstName.TabIndex = 11;
             this.lblFirstName.Text = "First Name :";
             // 
-            // comboBox1
+            // comboBoxGender
             // 
-            this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.comboBoxGender.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBoxGender.FormattingEnabled = true;
+            this.comboBoxGender.Items.AddRange(new object[] {
             "Male ",
             "Female",
             "Non-Binary Hoe"});
-            this.comboBox1.Location = new System.Drawing.Point(282, 609);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(253, 33);
-            this.comboBox1.TabIndex = 13;
+            this.comboBoxGender.Location = new System.Drawing.Point(282, 609);
+            this.comboBoxGender.Name = "comboBoxGender";
+            this.comboBoxGender.Size = new System.Drawing.Size(253, 33);
+            this.comboBoxGender.TabIndex = 13;
             // 
             // btnClear
             // 
@@ -288,13 +289,13 @@
             this.Controls.Add(this.lblSearch);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.btnClear);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.comboBoxGender);
             this.Controls.Add(this.txtboxFirstName);
             this.Controls.Add(this.lblFirstName);
             this.Controls.Add(this.txtboxLastName);
             this.Controls.Add(this.lblLastName);
             this.Controls.Add(this.cmbboxGender);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.txtboxAddress);
             this.Controls.Add(this.lblAddress);
             this.Controls.Add(this.txtboxContactNumber);
             this.Controls.Add(this.lblContactNumber);
@@ -320,14 +321,14 @@
         private System.Windows.Forms.TextBox txtbocContactID;
         private System.Windows.Forms.TextBox txtboxContactNumber;
         private System.Windows.Forms.Label lblContactNumber;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtboxAddress;
         private System.Windows.Forms.Label lblAddress;
         private System.Windows.Forms.Label cmbboxGender;
         private System.Windows.Forms.TextBox txtboxLastName;
         private System.Windows.Forms.Label lblLastName;
         private System.Windows.Forms.TextBox txtboxFirstName;
         private System.Windows.Forms.Label lblFirstName;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox comboBoxGender;
         private System.Windows.Forms.Button btnClear;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Label lblSearch;
