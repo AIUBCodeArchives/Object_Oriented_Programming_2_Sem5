@@ -18,9 +18,9 @@ namespace Book_Inventroy_Management_System
 
         public CustomDate(int year, int month, int day)
         {
-            Year = year;
-            Month = month;
-            Day = day;
+            this.Year = year;
+            this.Month = month;
+            this.Day = day;
         }
 
         public int CalculateAge()
@@ -49,7 +49,7 @@ namespace Book_Inventroy_Management_System
             Console.Write("Enter the Library maximum book capacity : ");
             int maxBookCapacity = Convert.ToInt32(Console.ReadLine());
 
-            Library library = new Library(maxBookCapacity);  // Create a library with a capacity of 10 books
+            Library library = new Library(maxBookCapacity); 
 
             library.AddBook(new Fiction("101", "The Great C++", "John F. Kennedy", new CustomDate(1925, 4, 10), "Computer Science"));
             library.AddBook(new NonFiction("102", "A Brief History of Time", "Donald Trump", new CustomDate(1988, 3, 1), "Science"));

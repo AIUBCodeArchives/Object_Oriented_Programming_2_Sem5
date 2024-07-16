@@ -42,7 +42,12 @@ namespace Book_Inventroy_Management_System
 
         public override void ShowInfo()
         {
-            Console.WriteLine($"Fiction Book - ISBN: {ISBN}\nTitle: {Title}\nAuthor: {Author}\nPublication Date: {PublicationDate}\nGenre: {Genre}\nAge: {CalculateAge()} years");
+            Console.WriteLine($"Fiction Book - ISBN: {ISBN}");
+            Console.WriteLine($"Title: {Title}");
+            Console.WriteLine($"Author: {Author}");
+            Console.WriteLine($"Publication Date: {PublicationDate}");
+            Console.WriteLine($"Genre: {Genre}");
+            Console.WriteLine($"Age: {CalculateAge()}years");
         }
     }
 
@@ -58,7 +63,12 @@ namespace Book_Inventroy_Management_System
 
         public override void ShowInfo()
         {
-            Console.WriteLine($"Non-Fiction Book - ISBN: {ISBN}\nTitle: {Title}\nAuthor: {Author}\nPublication Date: {PublicationDate}\nField of Study: {FieldOfStudy}\nAge: {CalculateAge()} years");
+            Console.WriteLine($"Fiction Book - ISBN: {ISBN}");
+            Console.WriteLine($"Title: {Title}");
+            Console.WriteLine($"Author: {Author}");
+            Console.WriteLine($"Publication Date: {PublicationDate}");
+            Console.WriteLine($"Field of Study: { FieldOfStudy}");
+            Console.WriteLine($"Age: {CalculateAge()}years");
         }
     }
 

@@ -26,7 +26,7 @@ namespace Hospital_Management_System
         {
             Console.WriteLine($"ID: {ID}");
             Console.WriteLine($"Name: {Name}");
-            Console.WriteLine($"Salary: {Salary:C}");
+            Console.WriteLine($"Salary: {Salary}");
             Console.WriteLine($"Department: {Department}");
         }
 

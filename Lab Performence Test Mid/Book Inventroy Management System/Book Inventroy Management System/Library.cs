@@ -17,13 +17,17 @@ namespace Book_Inventroy_Management_System
             bookCount = 0;
         }
 
-        public int TotalBooks => bookCount;
+        public int TotalBooks
+        {
+            get { return bookCount; }
+        }
 
         public void AddBook(Book book)
         {
             if (bookCount < books.Length)
             {
-                books[bookCount++] = book;
+                books[bookCount] = book;
+                bookCount++;
             }
             else
             {
