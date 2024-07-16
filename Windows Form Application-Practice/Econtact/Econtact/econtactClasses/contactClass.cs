@@ -139,8 +139,48 @@ namespace Econtact.econtactClasses
                 conn.Close();
             }
             return isSuccess;
-
         }
 
+        //Method to Delete data in database in our Application
+        public bool Delete(contactClass c)
+        {
+            //Creating a default return type and setting its value to false
+            bool isSuccess = false;
+
+            //step 1 - Connect Database
+            SqlConnection conn = new SqlConnection(myconnstring);
+            try
+            {
+                //SQL to delete data in our Database
+                string sql = "DELETE FROM tbl_contact WHERE ContactID = @ContactID";
+                //Creating sql command using sql and conn
+                SqlCommand cmd = new SqlCommand(sql, conn);
+                cmd.Parameters.AddWithValue("@ContactID", c.ContactID);
+
+                //Connection Open here
+                conn.Open();
+                int rows = cmd.ExecuteNonQuery();
+                //if the query runs successfully then the value of rows will be greater than zero else its value will be 0
+                if (rows > 0)
+                {
+                    isSuccess = true;
+                }
+                else
+                {
+                    isSuccess = false;
+                }
+            }
+            catch (Exception ex)
+            {
+
+            }
+            finally
+            {
+                //close Connection
+                conn.Close();
+            }
+            return isSuccess;
+        }
+       
     }
 }
