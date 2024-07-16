@@ -33,6 +33,12 @@ namespace Econtact.econtactClasses
             {
                 //step2 - Writing SQL query
                 string sql = "SELECT * FROM tbl_contact";
+                //Creating cmd using sql and conn
+                SqlCommand cmd = new SqlCommand(sql, conn);
+                //Creating SQL Database using cmd
+                SqlDataAdapter adapter = new SqlDataAdapter(cmd);
+                conn.Open();
+                adapter.Fill(dt);
             }
             catch (Exception ex)
             {
@@ -40,8 +46,100 @@ namespace Econtact.econtactClasses
             }
             finally 
             { 
-            
+                conn.Close();
             }
+            return dt;
+        }
+        //Inserting data into Database
+        public bool Insert(contactClass c)
+        {
+            //Creating a default return type and setting its value to false
+            bool isSuccess = false;
+
+            //step 1 - Connect Database
+            SqlConnection conn = new SqlConnection(myconnstring);
+            try
+            {
+                //step2 - Create SQL query
+                string sql = "INSERT INTO tbl_contact (FirstName, LastName, ContactNo, Address, Gender) VALUES(@FirstName, @LastName, @ContactNo, @Address, @Gender)";
+                //Creating sql command using sql and conn
+                SqlCommand cmd = new SqlCommand(sql, conn);
+                //Create parameter to add data
+                cmd.Parameters.AddWithValue("@FirstName", c.FirstName);
+                cmd.Parameters.AddWithValue("@LastName", c.LastName);
+                cmd.Parameters.AddWithValue("@ContactNo", c.ContactNo);
+                cmd.Parameters.AddWithValue("@Address", c.Address);
+                cmd.Parameters.AddWithValue("@Gender", c.Gender);
+
+                //Connection Open here
+                conn.Open();
+                int rows = cmd.ExecuteNonQuery();
+                //if the query runs successfully then the value of rows will be greater than zero else its value will be 0
+                if(rows > 0)
+                {
+                    isSuccess = true;
+                }
+                else
+                {
+                    isSuccess = false;
+                }
+            }
+            catch (Exception ex)
+            {
+
+            }
+            finally
+            {
+                conn.Close();
+            }
+
+            return isSuccess;
+        }
+        //Method to update data in database in our Application
+        public bool Update(contactClass c)
+        {
+            //Creating a default return type and setting its value to false
+            bool isSuccess = false;
+
+            //step 1 - Connect Database
+            SqlConnection conn = new SqlConnection(myconnstring);
+            try
+            {
+                //SQL to update data in our Database
+                string sql = "UPDATE tbl_contact SET FirstName = @FirstName, LastName = @LastName, ContactNo = @ContactNo, Address = @Address, Gender = @Gender WHERE ContactID = @ContactID";
+                //Creating sql command using sql and conn
+                SqlCommand cmd = new SqlCommand(sql, conn);
+                //Create parameter to add data
+                cmd.Parameters.AddWithValue("@FirstName", c.FirstName);
+                cmd.Parameters.AddWithValue("@LastName", c.LastName);
+                cmd.Parameters.AddWithValue("@ContactNo", c.ContactNo);
+                cmd.Parameters.AddWithValue("@Address", c.Address);
+                cmd.Parameters.AddWithValue("@Gender", c.Gender);
+                cmd.Parameters.AddWithValue("@ContactID", c.ContactID);
+
+                //Connection Open here
+                conn.Open();
+                int rows = cmd.ExecuteNonQuery();
+                //if the query runs successfully then the value of rows will be greater than zero else its value will be 0
+                if (rows > 0)
+                {
+                    isSuccess = true;
+                }
+                else
+                {
+                    isSuccess = false;
+                }
+            }
+            catch (Exception ex)
+            {
+
+            }
+            finally
+            {
+                conn.Close();
+            }
+            return isSuccess;
+
         }
 
     }
