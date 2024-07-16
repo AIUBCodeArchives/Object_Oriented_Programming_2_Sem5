@@ -20,6 +20,7 @@ namespace RamenShopDemo
         private void button2_Click(object sender, EventArgs e)
         {
             Form2 test = new Form2();
+            test.Visible = true;
         }
 
         private void button1_Click(object sender, EventArgs e)
