@@ -46,11 +46,29 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="dashboardForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dashboardForm.Designer.cs">
+      <DependentUpon>dashboardForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="employeeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="employeeForm.Designer.cs">
+      <DependentUpon>employeeForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="multipleFrom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="multipleFrom.Designer.cs">
+      <DependentUpon>multipleFrom.cs</DependentUpon>
     </Compile>
     <Compile Include="PanelTool.cs">
       <SubType>Form</SubType>
@@ -60,8 +78,23 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="reportsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="reportsForm.Designer.cs">
+      <DependentUpon>reportsForm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="dashboardForm.resx">
+      <DependentUpon>dashboardForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="employeeForm.resx">
+      <DependentUpon>employeeForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="multipleFrom.resx">
+      <DependentUpon>multipleFrom.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PanelTool.resx">
       <DependentUpon>PanelTool.cs</DependentUpon>
@@ -74,7 +107,11 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="reportsForm.resx">
+      <DependentUpon>reportsForm.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -87,6 +124,18 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-home-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-employee-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-employee-50%282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-report-50.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
