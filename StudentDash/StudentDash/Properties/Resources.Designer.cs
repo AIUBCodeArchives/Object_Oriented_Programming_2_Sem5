@@ -93,6 +93,36 @@ namespace StudentDash.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap fotor_20240921185332 {
+            get {
+                object obj = ResourceManager.GetObject("fotor-20240921185332", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap fotor_20240921194833 {
+            get {
+                object obj = ResourceManager.GetObject("fotor-20240921194833", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_admin_50 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-admin-50", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_car_unscreen {
             get {
                 object obj = ResourceManager.GetObject("icons8-car-unscreen", resourceCulture);

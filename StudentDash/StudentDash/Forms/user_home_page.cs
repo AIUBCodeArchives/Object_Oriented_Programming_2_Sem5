@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace StudentDash.Forms
 {
-    public partial class login_page : Form
+    public partial class user_home_page : Form
     {
-        public login_page()
+        public user_home_page()
         {
             InitializeComponent();
         }
@@ -20,13 +20,6 @@ namespace StudentDash.Forms
         private void exit_btn_Click(object sender, EventArgs e)
         {
             Application.Exit();
-        }
-
-        private void admin_login_btn_Click(object sender, EventArgs e)
-        {
-            admin_login_page alp = new admin_login_page();
-            alp.Visible = true;
-            this.Close();
         }
     }
 }

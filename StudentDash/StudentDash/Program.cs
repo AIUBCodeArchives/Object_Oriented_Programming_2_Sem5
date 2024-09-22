@@ -1,3 +1,5 @@
+using StudentDash.Forms;
+
 namespace StudentDash
 {
     internal static class Program

@@ -18,7 +18,7 @@ namespace StudentDash
         {
             if (load_progressbar.Value < 100)
             {
-                load_progressbar.Value += 2;
+                load_progressbar.Value += 1;
                 progressbar_percentage_lbl.Text = load_progressbar.Value.ToString() + "%";
             }
             else

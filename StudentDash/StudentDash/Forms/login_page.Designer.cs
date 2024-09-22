@@ -93,6 +93,7 @@
             admin_login_btn.Size = new Size(366, 72);
             admin_login_btn.TabIndex = 3;
             admin_login_btn.Text = "Login as an admin";
+            admin_login_btn.Click += admin_login_btn_Click;
             // 
             // login_page
             // 

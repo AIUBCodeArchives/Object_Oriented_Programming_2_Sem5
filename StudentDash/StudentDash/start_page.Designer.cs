@@ -67,8 +67,11 @@
             // 
             // load_progressbar
             // 
+            load_progressbar.BackColor = Color.Transparent;
+            load_progressbar.BorderRadius = 20;
             load_progressbar.CustomizableEdges = customizableEdges1;
-            load_progressbar.FillColor = SystemColors.Control;
+            load_progressbar.FillColor = Color.FromArgb(235, 216, 200);
+            load_progressbar.ForeColor = SystemColors.Control;
             load_progressbar.Location = new Point(100, 675);
             load_progressbar.Name = "load_progressbar";
             load_progressbar.ProgressColor = Color.FromArgb(49, 196, 141);
