@@ -72,6 +72,7 @@
             user_login_btn.Size = new Size(366, 72);
             user_login_btn.TabIndex = 2;
             user_login_btn.Text = "Login/Signup as a user";
+            user_login_btn.Click += user_login_btn_Click;
             // 
             // admin_login_btn
             // 

@@ -96,6 +96,7 @@
             back_btn.SizeMode = PictureBoxSizeMode.StretchImage;
             back_btn.TabIndex = 24;
             back_btn.TabStop = false;
+            back_btn.Click += back_btn_Click;
             // 
             // exit_btn
             // 
@@ -559,6 +560,7 @@
             signout_btn.SizeMode = PictureBoxSizeMode.StretchImage;
             signout_btn.TabIndex = 48;
             signout_btn.TabStop = false;
+            signout_btn.Click += signout_btn_Click;
             // 
             // user_home_page
             // 

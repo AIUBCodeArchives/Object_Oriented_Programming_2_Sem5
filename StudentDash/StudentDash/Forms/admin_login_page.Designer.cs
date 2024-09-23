@@ -74,7 +74,7 @@
             // 
             pictureBox1.BackColor = Color.FromArgb(57, 131, 120);
             pictureBox1.Image = Properties.Resources.icons8_admin_50;
-            pictureBox1.Location = new Point(580, 53);
+            pictureBox1.Location = new Point(588, 35);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(140, 126);
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -85,11 +85,11 @@
             // 
             admin_login_lbl.AutoSize = true;
             admin_login_lbl.BackColor = Color.Transparent;
-            admin_login_lbl.Font = new Font("Mongolian Baiti", 31.8000011F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            admin_login_lbl.Font = new Font("Microsoft Sans Serif", 31.8000011F, FontStyle.Bold, GraphicsUnit.Point, 0);
             admin_login_lbl.ForeColor = Color.FromArgb(235, 216, 200);
-            admin_login_lbl.Location = new Point(488, 182);
+            admin_login_lbl.Location = new Point(485, 164);
             admin_login_lbl.Name = "admin_login_lbl";
-            admin_login_lbl.Size = new Size(325, 58);
+            admin_login_lbl.Size = new Size(339, 63);
             admin_login_lbl.TabIndex = 4;
             admin_login_lbl.Text = "Admin Login";
             // 
@@ -97,11 +97,11 @@
             // 
             username_lbl.AutoSize = true;
             username_lbl.BackColor = Color.Transparent;
-            username_lbl.Font = new Font("Mongolian Baiti", 19.8000011F, FontStyle.Bold);
+            username_lbl.Font = new Font("Microsoft Sans Serif", 19.8000011F, FontStyle.Bold);
             username_lbl.ForeColor = Color.FromArgb(235, 216, 200);
-            username_lbl.Location = new Point(367, 261);
+            username_lbl.Location = new Point(365, 253);
             username_lbl.Name = "username_lbl";
-            username_lbl.Size = new Size(328, 36);
+            username_lbl.Size = new Size(363, 39);
             username_lbl.TabIndex = 5;
             username_lbl.Text = "Username/StudentID:";
             // 
@@ -163,11 +163,11 @@
             // 
             password_lbl.AutoSize = true;
             password_lbl.BackColor = Color.Transparent;
-            password_lbl.Font = new Font("Mongolian Baiti", 19.8000011F, FontStyle.Bold);
+            password_lbl.Font = new Font("Microsoft Sans Serif", 19.8000011F, FontStyle.Bold);
             password_lbl.ForeColor = Color.FromArgb(235, 216, 200);
-            password_lbl.Location = new Point(367, 371);
+            password_lbl.Location = new Point(365, 363);
             password_lbl.Name = "password_lbl";
-            password_lbl.Size = new Size(163, 36);
+            password_lbl.Size = new Size(185, 39);
             password_lbl.TabIndex = 7;
             password_lbl.Text = "Password:";
             // 
@@ -202,11 +202,11 @@
             // 
             security_key_lbl.AutoSize = true;
             security_key_lbl.BackColor = Color.Transparent;
-            security_key_lbl.Font = new Font("Mongolian Baiti", 19.8000011F, FontStyle.Bold);
+            security_key_lbl.Font = new Font("Microsoft Sans Serif", 19.8000011F, FontStyle.Bold);
             security_key_lbl.ForeColor = Color.FromArgb(235, 216, 200);
-            security_key_lbl.Location = new Point(367, 489);
+            security_key_lbl.Location = new Point(365, 481);
             security_key_lbl.Name = "security_key_lbl";
-            security_key_lbl.Size = new Size(225, 36);
+            security_key_lbl.Size = new Size(240, 39);
             security_key_lbl.TabIndex = 9;
             security_key_lbl.Text = "Security Key: ";
             // 
@@ -222,7 +222,7 @@
             admin_login_btn.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
             admin_login_btn.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
             admin_login_btn.FillColor = Color.FromArgb(49, 196, 141);
-            admin_login_btn.Font = new Font("Mongolian Baiti", 24F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            admin_login_btn.Font = new Font("Microsoft Sans Serif", 24F, FontStyle.Bold, GraphicsUnit.Point, 0);
             admin_login_btn.ForeColor = Color.FromArgb(235, 216, 200);
             admin_login_btn.Location = new Point(353, 642);
             admin_login_btn.Name = "admin_login_btn";
@@ -230,6 +230,7 @@
             admin_login_btn.Size = new Size(595, 72);
             admin_login_btn.TabIndex = 11;
             admin_login_btn.Text = "Login";
+            admin_login_btn.Click += admin_login_btn_Click;
             // 
             // forgot_password_btn
             // 
@@ -259,11 +260,11 @@
             // 
             cant_login_lbl.AutoSize = true;
             cant_login_lbl.BackColor = Color.Transparent;
-            cant_login_lbl.Font = new Font("Mongolian Baiti", 12F, FontStyle.Bold);
+            cant_login_lbl.Font = new Font("Microsoft Sans Serif", 12F);
             cant_login_lbl.ForeColor = Color.FromArgb(235, 216, 200);
             cant_login_lbl.Location = new Point(528, 727);
             cant_login_lbl.Name = "cant_login_lbl";
-            cant_login_lbl.Size = new Size(120, 21);
+            cant_login_lbl.Size = new Size(115, 25);
             cant_login_lbl.TabIndex = 16;
             cant_login_lbl.Text = "Can't login?";
             // 
@@ -271,7 +272,7 @@
             // 
             forgot_password_lbl.ActiveLinkColor = Color.Red;
             forgot_password_lbl.BackColor = Color.Transparent;
-            forgot_password_lbl.Font = new Font("Mongolian Baiti", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            forgot_password_lbl.Font = new Font("Microsoft Sans Serif", 12F);
             forgot_password_lbl.ForeColor = Color.FromArgb(235, 216, 200);
             forgot_password_lbl.LinkColor = Color.FromArgb(235, 216, 200);
             forgot_password_lbl.Location = new Point(778, 470);
@@ -285,7 +286,7 @@
             // 
             contact_customs_btn.ActiveLinkColor = Color.RosyBrown;
             contact_customs_btn.BackColor = Color.Transparent;
-            contact_customs_btn.Font = new Font("Mongolian Baiti", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            contact_customs_btn.Font = new Font("Microsoft Sans Serif", 12F);
             contact_customs_btn.LinkColor = Color.FromArgb(235, 216, 200);
             contact_customs_btn.Location = new Point(654, 727);
             contact_customs_btn.Name = "contact_customs_btn";

@@ -21,5 +21,19 @@ namespace StudentDash.Forms
         {
             Application.Exit();
         }
+
+        private void back_btn_Click(object sender, EventArgs e)
+        {
+            user_login_page ulp = new user_login_page();
+            ulp.Visible = true;
+            this.Close();
+        }
+
+        private void signout_btn_Click(object sender, EventArgs e)
+        {
+            login_page lp = new login_page();
+            lp.Visible = true;
+            this.Close();
+        }
     }
 }

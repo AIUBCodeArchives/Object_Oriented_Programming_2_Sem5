@@ -40,18 +40,18 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(admin_panel_page));
             title_logo = new PictureBox();
             exit_btn = new PictureBox();
-            pictureBox2 = new PictureBox();
             search_lbl = new Label();
             search_txtbox = new Guna.UI2.WinForms.Guna2TextBox();
             user_dataviewgrid = new Guna.UI2.WinForms.Guna2DataGridView();
             admin_udate_btn = new Guna.UI2.WinForms.Guna2Button();
             admin_delete_btn = new Guna.UI2.WinForms.Guna2Button();
             signout_btn = new PictureBox();
+            back_btn = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)title_logo).BeginInit();
             ((System.ComponentModel.ISupportInitialize)exit_btn).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)user_dataviewgrid).BeginInit();
             ((System.ComponentModel.ISupportInitialize)signout_btn).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)back_btn).BeginInit();
             SuspendLayout();
             // 
             // title_logo
@@ -76,18 +76,6 @@
             exit_btn.TabIndex = 3;
             exit_btn.TabStop = false;
             exit_btn.Click += exit_btn_Click;
-            // 
-            // pictureBox2
-            // 
-            pictureBox2.BackColor = Color.Transparent;
-            pictureBox2.Cursor = Cursors.Hand;
-            pictureBox2.Image = Properties.Resources.fotor_2024092019277;
-            pictureBox2.Location = new Point(12, 12);
-            pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(70, 67);
-            pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox2.TabIndex = 15;
-            pictureBox2.TabStop = false;
             // 
             // search_lbl
             // 
@@ -231,6 +219,20 @@
             signout_btn.SizeMode = PictureBoxSizeMode.StretchImage;
             signout_btn.TabIndex = 49;
             signout_btn.TabStop = false;
+            signout_btn.Click += signout_btn_Click;
+            // 
+            // back_btn
+            // 
+            back_btn.BackColor = Color.Transparent;
+            back_btn.Cursor = Cursors.Hand;
+            back_btn.Image = Properties.Resources.fotor_2024092019277;
+            back_btn.Location = new Point(12, 12);
+            back_btn.Name = "back_btn";
+            back_btn.Size = new Size(70, 67);
+            back_btn.SizeMode = PictureBoxSizeMode.StretchImage;
+            back_btn.TabIndex = 50;
+            back_btn.TabStop = false;
+            back_btn.Click += back_btn_Click;
             // 
             // admin_panel_page
             // 
@@ -238,13 +240,13 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = Properties.Resources._9;
             ClientSize = new Size(1300, 800);
+            Controls.Add(back_btn);
             Controls.Add(signout_btn);
             Controls.Add(admin_delete_btn);
             Controls.Add(admin_udate_btn);
             Controls.Add(user_dataviewgrid);
             Controls.Add(search_txtbox);
             Controls.Add(search_lbl);
-            Controls.Add(pictureBox2);
             Controls.Add(exit_btn);
             Controls.Add(title_logo);
             FormBorderStyle = FormBorderStyle.None;
@@ -254,9 +256,9 @@
             Text = "admin_panel_page";
             ((System.ComponentModel.ISupportInitialize)title_logo).EndInit();
             ((System.ComponentModel.ISupportInitialize)exit_btn).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ((System.ComponentModel.ISupportInitialize)user_dataviewgrid).EndInit();
             ((System.ComponentModel.ISupportInitialize)signout_btn).EndInit();
+            ((System.ComponentModel.ISupportInitialize)back_btn).EndInit();
             ResumeLayout(false);
         }
 
@@ -264,12 +266,12 @@
 
         private PictureBox title_logo;
         private PictureBox exit_btn;
-        private PictureBox pictureBox2;
         private Label search_lbl;
         private Guna.UI2.WinForms.Guna2TextBox search_txtbox;
         private Guna.UI2.WinForms.Guna2DataGridView user_dataviewgrid;
         private Guna.UI2.WinForms.Guna2Button admin_udate_btn;
         private Guna.UI2.WinForms.Guna2Button admin_delete_btn;
         private PictureBox signout_btn;
+        private PictureBox back_btn;
     }
 }

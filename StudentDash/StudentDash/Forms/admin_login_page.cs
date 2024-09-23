@@ -28,5 +28,12 @@ namespace StudentDash.Forms
             lp.Visible = true;
             this.Close();
         }
+
+        private void admin_login_btn_Click(object sender, EventArgs e)
+        {
+            admin_panel_page app = new admin_panel_page();
+            app.Visible = true;
+            this.Close();
+        }
     }
 }
