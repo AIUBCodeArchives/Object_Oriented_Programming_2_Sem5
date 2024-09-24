@@ -29,5 +29,10 @@ namespace StudentDash
                 this.Visible = false;
             }
         }
+
+        private void load_progressbar_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

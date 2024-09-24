@@ -81,6 +81,7 @@
             load_progressbar.TabIndex = 2;
             load_progressbar.Text = "guna2ProgressBar1";
             load_progressbar.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
+            load_progressbar.ValueChanged += load_progressbar_ValueChanged;
             // 
             // progressbar_timer
             // 
